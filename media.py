@@ -20,7 +20,7 @@ class Movie:
     hero                = ''
     actor               = ''
 
-    # the constructor only requires the title, hero, and trailer url
+    # the constructor only requires the IMDB movie id, hero, and trailer url
     # The rest of the data can be requested from IMDB
     def __init__(self, imdb_id, trailer, hero):
         # Request the movie's data from IMDB and get back the dict of data
