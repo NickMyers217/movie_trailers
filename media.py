@@ -14,12 +14,12 @@ class Movie:
         actor               (str): The actor who played the hero
     """
     # Attributes
-    title
-    poster_image_url
-    trailer_youtube_url
-    year
-    hero
-    actor
+    title               = ''
+    poster_image_url    = ''
+    trailer_youtube_url = ''
+    year                = ''
+    hero                = ''
+    actor               = ''
 
     # the constructor only requires the IMDB movie id, hero, and trailer url
     # The rest of the data can be requested from IMDB
