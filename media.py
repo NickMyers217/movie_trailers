@@ -1,6 +1,7 @@
 # Import the IMDB web API wrapper to request movie data from the internet
 import imdb
 
+
 class Movie:
     """This is a class that stores data on movies
 
@@ -13,12 +14,12 @@ class Movie:
         actor               (str): The actor who played the hero
     """
     # Attributes
-    title               = ''
-    poster_image_url    = ''
-    trailer_youtube_url = ''
-    year                = ''
-    hero                = ''
-    actor               = ''
+    title
+    poster_image_url
+    trailer_youtube_url
+    year
+    hero
+    actor
 
     # the constructor only requires the IMDB movie id, hero, and trailer url
     # The rest of the data can be requested from IMDB
