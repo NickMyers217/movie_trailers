@@ -22,5 +22,5 @@ movies.append(media.Movie('tt0099365',
     'https://www.youtube.com/watch?v=L58rdhCfDIU',
     'Peyton Westlake / Darkman'))
 
-# Server a formatted HTML page with the movie data
+# Serve a formatted HTML page with the movie data
 ft.open_movies_page(movies)
