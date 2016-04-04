@@ -2,7 +2,7 @@
 This is a site to show off some of my favorite action movies.
 
 ## Installation
-To get the site up and running, use the following commands from your shell (you'll need git and python installed).
+To get the site up and running, use the following commands from your shell (you'll need git and python 2.7 installed).
 
 ``` shell
 git clone https://github.com/nickmyers217/movie_trailers
