@@ -1,3 +1,6 @@
+# Import the IMDB web API wrapper to request movie data from the internet
+import imdb
+
 class Movie:
     """This is a class that stores data on movies
 
@@ -17,11 +20,17 @@ class Movie:
     hero                = ''
     actor               = ''
 
-    # Constructor
-    def __init__(self, title, poster, trailer, year, hero, actor):
-        self.title               = title
-        self.poster_image_url    = poster
+    # the constructor only requires the title, hero, and trailer url
+    # The rest of the data can be requested from IMDB
+    def __init__(self, imdb_id, trailer, hero):
+        # Request the movie's data from IMDB and get back the dict of data
+        data = imdb.request_movie(imdb_id)
+
+        # Store all the relevant data in this instance of Movie
         self.trailer_youtube_url = trailer
-        self.year                = year
         self.hero                = hero
-        self.actor               = actor
+        self.title               = data['Title']
+        self.poster_image_url    = data['Poster']
+        self.year                = data['Year']
+        # The lead actor is always first in the list of actors
+        self.actor               = data['Actors'][0] 

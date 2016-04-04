@@ -7,35 +7,23 @@ movies = []
 # Create an instance of Movie to hold the data for RoboCop
 # and then append it to the list
 movies.append(media.Movie(
-    'RoboCop',
-    'http://ia.media-imdb.com/images/M/MV5BMTk1MDUzMTQ3OV5BMl5BanBnXkFtZTcwMDAwNTk0NA@@._V1_SX640_SY720_.jpg',
+    'tt0093870',
     'https://www.youtube.com/watch?v=zbCbwP6ibR4',
-    '1987',
-    'Officer Murphy / RoboCop',
-    'Peter Weller'
-))
+    'Officer Murphy / RoboCop'))
 
 # Create an instance of Movie to hold the data for First Blood
 # and then append it to the list
 movies.append(media.Movie(
-    'First Blood',
-    'http://ia.media-imdb.com/images/M/MV5BNzk5NDc4MDQyNV5BMl5BanBnXkFtZTgwNzg5NTYxMTE@._V1_SX640_SY720_.jpg',
+    'tt0083944',
     'https://www.youtube.com/watch?v=IAqLKlxY3Eo',
-    '1982',
-    'Jonh Rambo',
-    'Sylvester Stallone'
-))
+    'Jonh Rambo'))
 
 # Create an instance of Movie to hold the data for First Blood
 # and then append it to the list
 movies.append(media.Movie(
-    'Darkman',
-    'http://ia.media-imdb.com/images/M/MV5BMTc5MzUxMjk4NF5BMl5BanBnXkFtZTgwNTEzNDk4NjE@._V1_UY1200_CR92,0,630,1200_AL_.jpg',
+    'tt0099365',
     'https://www.youtube.com/watch?v=L58rdhCfDIU',
-    '1990',
-    'Peyton Westlake / Darkman',
-    'Liam Neeson'
-))
+    'Peyton Westlake / Darkman'))
 
 # Server a formatted HTML page with the movie data
 ft.open_movies_page(movies)
